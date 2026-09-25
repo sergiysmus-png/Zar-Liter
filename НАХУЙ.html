@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>ПОШЁЛ НАХУЙ</title>
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: #0a0a0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-family: Arial, sans-serif;
+    font-size: 10vw;
+    color: #fff;
+    margin: 0;
+    animation: pulse 1.5s infinite ease-in-out, rainbow 4s linear infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.6;
+      text-shadow:
+        0 0 10px #00eaff,
+        0 0 20px #00eaff,
+        0 0 40px #00eaff;
+    }
+    50% {
+      opacity: 1;
+      text-shadow:
+        0 0 20px #00eaff,
+        0 0 40px #00eaff,
+        0 0 80px #00eaff,
+        0 0 120px #00eaff;
+    }
+  }
+
+  @keyframes rainbow {
+    0%   { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+  }
+</style>
+</head>
+<body>
+  <h1>ПОШЁЛ НАХУЙ</h1>
+</body>
+</html>
